@@ -117,7 +117,7 @@ public class HashMap<K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneabl
 **Node 节点类源码:**
 
 ```java
-// 继承自 Map.Entry<K,V>
+// 实现自 Map.Entry<K,V>
 static class Node<K,V> implements Map.Entry<K,V> {
        final int hash;// 哈希值，存放元素到hashmap中时用来与其他元素hash值比较
        final K key;//键
